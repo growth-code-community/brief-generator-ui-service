@@ -1,5 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Work+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'inter', sans-serif;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: var(--white);
+}
+
+
+
+h1 {
+    font-size: 52px !important;
+}
+
+
+.heading {
+    font-size: 38px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p,
+a,
+label,
+li,
+input {
+    font-family: "inter", sans-serif !important;
+    font-size: 16px; 
+}
+
+a {
+    color: var(--blue);
+}
+
+p {
+    color: var(--white);
+}
 
 .white {
     color: #fff;
