@@ -38,8 +38,10 @@
 
         <div class="profile mt-2">
             <img src="@/assets/images/profile.png" alt="">
-            <p>Good Brief</p>
-            <p><b>Growth Team</b></p>
+            <div class="content">
+                <p class="font-size-10">Good Brief</p>
+                <p class="font-size-12"><b>Growth Team</b></p>
+            </div>
         </div>
     </div>
 </template>
@@ -59,11 +61,15 @@ export default {
     padding: 32px;
     border-radius: 8px;
     width: 100%;
+
+    @media (width < 700px) {
+        padding: 16px
+    }
 }
 
 .brief .top {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .brief .top button {
@@ -97,5 +103,8 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    @media (width < 900px)  {
+        
+    }
 }
 </style>

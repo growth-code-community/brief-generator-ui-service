@@ -2,7 +2,6 @@
     <form>
         <div class="top">
             <p class="weight-5 mb-1">Create Brief</p>
-            <hr>
         </div>
 
         <div class="container mt-2">
@@ -41,39 +40,46 @@ form {
     align-items: stretch;
     padding: 32px;
     border-radius: 8px;
+
+    @media (width < 700px) {
+        padding: 16px;
+    }
 }
 
 form .top {
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-form .top hr {
-    border: .5px solid #FFFFFF;
+    border-bottom: .5px solid #ffffff7f;
 }
 
 form .container {
     display: flex;
     align-items: center;
     gap: 24px;
+    align-items: stretch;
+    width: 100%;
 }
 
 form .container .content {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    align-items: stretch;
+    width: 100%;
 }
 
 form .container .content select {
     display: flex;
     padding: 8px;
-    background: url(@/assets/icons/dropdown_arrow.svg) 97% center no-repeat #ffffff5c !important;
+    background: url(@/assets/icons/dropdown_arrow.svg) 95% center no-repeat #ffffff5c !important;
     border-radius: 4px;
     color: #FFFFFF;
+    font-size: 16px;
     font-weight: 500;
-    width: 200px;
+    width: 100%;
     -webkit-appearance: none;
+    outline: none;
 }   
 
 form .prompt {
@@ -81,13 +87,17 @@ form .prompt {
     flex-direction: column;
     gap: 12px;
     align-items: stretch;
+    height: 100%;
 }
 
 form .prompt textarea {
     background-color: #ffffff5c ;    
     color: #FFFFFF;
-    height: 50px;
+    height: 100%;
+    padding: 10px;
     font-size: 16px;
     font-weight: 500;
+    border-radius: 4px;
+    outline: 0px;
 }
 </style>

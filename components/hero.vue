@@ -14,7 +14,7 @@ import Form from './Form'
 import Brief from './Brief.vue';
 
 export default {
-    components:{
+    components: {
         Banner,
         Form,
         Brief
@@ -26,15 +26,25 @@ export default {
 .hero {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 150px 250px 0px;
+    align-items: center;
+    margin: 150px 120px 0px;
+    padding: 0px;
+
+    @media (width < 700px) {
+        margin: 90px 20px;
+    }
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 50px
-}
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* Replace percentages with fr units */
+    gap: 20px;
+    margin-bottom: 50px;
+    width: inherit;
 
+    @media (width < 1000px) {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
