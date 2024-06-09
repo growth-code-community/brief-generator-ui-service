@@ -21,7 +21,7 @@ export default {
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   height: 100vh;
   width: 100%;
 }
