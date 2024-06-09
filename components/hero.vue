@@ -32,6 +32,10 @@ export default {
 
     max-width: 1500px;
 
+    @media (width  < 1000px) {
+        margin: 150px 40px 0px;
+    }
+
     @media (width < 700px) {
         margin: 90px 20px;
     }
@@ -46,6 +50,7 @@ export default {
     width: inherit;
 
     @media (width < 1000px) {
+        margin-top: 20px;
         grid-template-columns: 1fr;
     }
 }
