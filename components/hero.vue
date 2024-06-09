@@ -30,6 +30,8 @@ export default {
     margin: 150px 120px 0px;
     padding: 0px;
 
+    max-width: 1500px;
+
     @media (width < 700px) {
         margin: 90px 20px;
     }
