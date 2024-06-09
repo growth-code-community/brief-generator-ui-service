@@ -7,7 +7,7 @@
         <img src="@/assets/icons/export.svg" alt="" />
       </button>
     </div>
-    <div class="container">
+    <div class="container mt-3">
       <p>
         <b>Company Name:</b> <br />
         Up Branch
@@ -39,7 +39,7 @@
       </p>
     </div>
 
-    <div class="profile mt-2">
+    <div class="profile mt-3">
       <img src="@/assets/images/profile.png" alt="" />
       <div class="content">
         <p class="font-size-10">Good Brief</p>
@@ -87,11 +87,12 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 16px;
+  gap: 32px;
 }
 
 .brief .container p {
   font-weight: 300 !important;
+  line-height: 25px;
 }
 
 .brief .profile {
